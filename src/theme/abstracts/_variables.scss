@@ -1,0 +1,60 @@
+@charset 'utf-8';
+$width-shadow-tl: 1px;
+$width-shadow-br: 2px;
+$length-shadow: 5px;
+$color-shadow: rgba(0, 0, 0, 0.3);
+$full-transition: 0.5s;
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$red: hsl(354, 85%, 50%);
+$green: #69af23;
+$dark-grey: hsl(199.2, 20.5%, 18.3%);
+
+$bar-black: hsl(199.2, 20.5%, 18.3%);
+$bar-blue: hsl(200, 100%, 50%);
+$bar-green: hsl(89.9, 66.7%, 41.2%);
+$bar-dark-blue: hsl(208.2, 90.9%, 29.8%);
+$bar-grey: hsl(0, 0%, 67.8%);
+$bar-light-grey: hsl(0, 0%, 90%);
+$bar-purple: hsl(292.1, 65.8%, 43.6%);
+$bar-red: hsl(353.3, 100%, 44.1%);
+$bar-orange: hsl(34.7, 92.9%, 49%);
+
+$engie-100: hsl(199, 100%, 95.1%);
+$engie-200: hsl(199.6, 100%, 87.5%);
+$engie-300: hsl(200, 100%, 80%);
+$engie-400: hsl(199.9, 100%, 65.1%);
+$engie-500: hsl(200, 100%, 50%);
+$engie-600: hsl(200.1, 100%, 45.1%);
+$engie-700: hsl(200, 100%, 30%);
+$engie-800: hsl(199.8, 100%, 22.6%);
+$engie-900: hsl(200.3, 100%, 15.1%);
+
+$blue-100: hsl(202.9, 47.4%, 93.4%);
+$blue-200: hsl(201.5, 49%, 83.2%);
+$blue-300: hsl(202.4, 49%, 73.2%);
+$blue-400: hsl(202.3, 48.4%, 53%);
+$blue-500: hsl(202.3, 100%, 32.8%);
+$blue-600: hsl(201.9, 100%, 29.4%);
+$blue-700: hsl(202.2, 100%, 19.6%);
+$blue-800: hsl(202.4, 100%, 14.7%);
+$blue-900: hsl(201.7, 100%, 9.8%);
+
+$grey-100: hsl(0, 0%, 99.6%);
+$grey-200: hsl(0, 0%, 98.8%);
+$grey-300: hsl(0, 0%, 98.4%);
+$grey-400: hsl(0, 0%, 96.9%);
+$grey-500: hsl(0, 0%, 95.7%);
+$grey-600: hsl(0, 0%, 86.3%);
+$grey-650: hsl(0, 0%, 80.3%);
+$grey-700: hsl(0, 0%, 57.3%);
+$grey-800: hsl(0, 0%, 43.1%);
+$grey-900: hsl(0, 0%, 28.6%);
+
+$round-tree-line-width: 1px;
+$round-tree-line-color: $grey-800;
+$round-tree-child-line-width: 2px;
+$round-tree-selected-child-line-color: $blue-500;
+
+$round-tree-branch-space: 20px;

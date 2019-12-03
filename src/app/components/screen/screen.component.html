@@ -1,0 +1,63 @@
+<div class="{{ full ? 'full' : '' }} screen">
+  <div class="sheader">
+    <div class="in-header">
+      <div class="top"></div>
+      <div class="bottom">
+        <div class="search-container"></div>
+        <div class="menu-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sbody">
+    <div class="left">
+      <div class="cp-panel cp-scroll">
+        <div class="cp-unit-panel">
+          <!-- <ng-container *ngFor="let line of data">
+            <div>
+              <i class="cp-button material-icons">layers</i>
+            </div>
+            <div>
+              <i class="cp-button material-icons">directions</i>
+            </div>
+            <div>
+              <i class="cp-button material-icons">watch</i>
+            </div>
+            <div>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                transform="matrix(2 0 0 2 0 0)"
+                xmlns="http://www.w3.org/2000/svg"
+                class="primary"
+              >
+                <path
+                  d="M15.13 6.698c-1.338-1.338-2.817-2.028-3.303-1.542-.302.302-.15.985.327 1.78l-3.9 2.89C7.235 9.12 6.403 8.82 6.102 9.12c-.485.487.6 2.36 2.424 4.185 1.824 1.824 3.697 2.91 4.184 2.422.3-.3-.002-1.132-.705-2.154l2.89-3.9c.794.478 1.477.63 1.78.328.485-.485-.205-1.964-1.543-3.302zM5 16.828l4.184-2.863-.66-.66-.66-.66L5 16.827z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </ng-container> -->
+        </div>
+      </div>
+    </div>
+    <div class="content cp-scroll">
+      <table>
+        <tr *ngFor="let line of data; let i = index">
+          <td *ngFor="let elem of line; let j = index">
+            <div
+              class="case{{
+                (i % 2 && !(j % 2)) || (!(i % 2) && j % 2) ? '-black' : ''
+              }}"
+            ></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="right"></div>
+  </div>
+  <div class="sstatus"></div>
+</div>
+<i class="full-screen-button material-icons" (click)="click()">
+  fullscreen{{ full ? "_exit" : "" }}
+</i>
