@@ -3,7 +3,16 @@
     <div class="in-header">
       <div class="top"></div>
       <div class="bottom">
-        <div class="search-container"></div>
+        <div class="search-container">
+          <div class="in-search-container">
+            <div class="cp-search">
+              Kamal Mehdi
+            </div>
+            <div class="cp-icon-button">
+              <i class="material-icons">search</i>
+            </div>
+          </div>
+        </div>
         <div class="menu-container"></div>
       </div>
     </div>
@@ -12,7 +21,13 @@
     <div class="left">
       <div class="cp-panel cp-scroll">
         <div class="cp-unit-panel">
-          <!-- <ng-container *ngFor="let line of data">
+          <div *ngFor="let line of data">
+            <div></div>
+          </div>
+        </div>
+
+        <!--<div class="cp-unit-panel">
+          <ng-container *ngFor="let line of data">
             <div>
               <i class="cp-button material-icons">layers</i>
             </div>
@@ -37,8 +52,8 @@
                 ></path>
               </svg>
             </div>
-          </ng-container> -->
-        </div>
+          </ng-container> 
+        </div>-->
       </div>
     </div>
     <div class="content cp-scroll">

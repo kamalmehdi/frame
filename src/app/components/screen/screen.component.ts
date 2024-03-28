@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, HostListener } from "@angular/core";
 
 @Component({
   selector: "app-screen",
@@ -11,10 +11,20 @@ export class ScreenComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    for (let i = 0; i < 140; i++) {
+    for (let i = 0; i < 340; i++) {
       let array = [];
       for (let j = 0; j < 40; j++) array.push(j * i);
       this.data.push(array);
+    }
+  }
+
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    // Vérifie si la touche enfoncée est la touche "F"
+    if (event.key === 'F' || event.key === 'f') {
+      // Exécutez votre action ici
+      this.click();
     }
   }
 
